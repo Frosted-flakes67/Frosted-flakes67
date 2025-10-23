@@ -6,33 +6,68 @@
     body { 
       font-family: Arial; 
       text-align: center; 
-      background-color: #f0f0f0; 
+      background-color: #000000; /* black background */
+      color: white;
+      margin: 0;
+      padding: 20px;
     }
+
     h1 { 
-      color: #000000; 
+      color: #ffffff;
+      margin-bottom: 20px;
     }
-    .link {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
-      width: 250px;
-      background-color: #4CAF50;
-      color: black;
-      text-decoration: none;
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .game {
+      text-align: center;
+      width: 200px;
+    }
+
+    .game img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 10px;
+      cursor: pointer;
+      border: 2px solid white;
     }
-    .link:hover { 
-      background-color: #45a049; 
+
+    .game-title {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+    }
+
+    .game-title:hover {
+      color: #4CAF50;
     }
   </style>
 </head>
 <body>
   <h1>Frosted Flakes Hub</h1>
-  <p>Game sites that work</p>
+  <p>Click on a picture to visit the game or download it</p>
 
-  <!-- Correct download button -->
-  <a class="link" href="downloads.html">Download Games</a>
+  <div class="gallery">
+    <!-- Game 1 -->
+    <div class="game">
+      <a href="downloads.html">
+        <img src="images/game1.png" alt="Game 1">
+      </a>
+      <a class="game-title" href="downloads.html">Download Game 1</a>
+    </div>
 
-</body>
-</html>
-
+    <!-- Game 2 -->
+    <div class="game">
+      <a href="downloads.html">
+        <img src="images/game2.png" alt="Game 2">
+      </a>
+      <a class="game-title" href="downloads.html">Do
